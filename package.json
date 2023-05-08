@@ -1,9 +1,9 @@
 {
   "name": "@jameslnewell/resolve-bin",
   "author": "James Newell",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "type": "module",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"

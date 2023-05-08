@@ -13,8 +13,9 @@ npm i -S @jameslnewell/resolve-bin
 ```js
 import resolveBin from "@jameslnewell/resolve-bin";
 
-const path = await resolveBin("typescript", {
+const path = resolveBin({
   from: __dirname,
-  executable: "tsc",
-});
+  package: 'typescript',
+  command: 'tsc',
+})
 ```

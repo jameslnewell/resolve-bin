@@ -1,17 +1,16 @@
 {
   "name": "@jameslnewell/resolve-bin",
-  "version": "1.0.0",
+  "author": "James Newell",
+  "version": "2.0.0",
   "type": "module",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
-  "author": "James Newell",
   "dependencies": {
     "debug": "^4.3.4",
     "find-up": "^6.3.0",
     "load-json-file": "^7.0.1"
   },
-  "scripts": {},
   "license": "MIT"
 }

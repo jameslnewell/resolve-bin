@@ -14,7 +14,6 @@ const log = debug('@jameslnewell/resolve-bin')
 
 /**
  * Resolve the path of a binary from a npm package
- * @param {string} pkg The package name
  * @param {ResolveBinOptions} options
  * @returns {Promise<string>}
  */

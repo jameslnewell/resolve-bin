@@ -4,13 +4,20 @@
   "version": "2.0.0",
   "type": "module",
   "main": "lib/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "dependencies": {
     "debug": "^4.3.4",
     "find-up": "^6.3.0",
     "load-json-file": "^7.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsc"
   },
   "license": "MIT"
 }

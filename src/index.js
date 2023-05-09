@@ -25,8 +25,9 @@ export async function resolveBin({package: pkg, command, from = process.cwd()}) 
     log('loading package.json from %s', manifestDir)
     const manifestJSON = await loadJsonFile(manifestFile)
     const bin = typeof manifestJSON?.bin === 'string' ? {[pkg]: manifestJSON.bin} : manifestJSON.bin ?? {}
-    log('selecting executable %s', bin)
+    log('selecting executable %s from %s', command ? command : pkg, bin)
     const binPath = command ? bin[command] : bin[pkg]
     if (!binPath) throw new Error(`Bin entry not found in ${manifestFile} for ${command ? command : pkg}`)
+    log('found bin %s', path.join(manifestDir, binPath))
     return path.join(manifestDir, binPath)
 }
